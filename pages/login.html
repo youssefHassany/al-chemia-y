@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>الكيميائي</title>
+    <title>الكيميائي | التسجيل</title>
     <link rel="stylesheet" href="/style/style.css" />
-    <link rel="stylesheet" href="/style/home/style.css" />
     <link rel="icon" href="/assests/logo.png" />
+    <!-- using the register page styling because they have the same style and elements -->
+    <link rel="stylesheet" href="/style/register/style.css" />
   </head>
   <body>
     <header>
-      <a href="index.html">
+      <a href="../index.html">
         <img src="/assests/logo.png" alt="" />
       </a>
 
@@ -18,140 +19,52 @@
     </header>
 
     <main>
-      <section class="hero-section">
-        <div class="hero-txt-container">
-          <p style="display: flex; flex-direction: row-reverse; gap: 0.5rem">
-            منصة
-            <span style="color: var(--primary)" class="underlined-word">
-              الكيميائي
-              <svg
-                width="80"
-                height="10"
-                viewBox="0 0 310 35"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4.99731 29.2325C35.4557 27.4409 64.2864 14.2954 94.4454 9.98697C126.805 5.36416 158.066 5.61298 190.892 5.61298C214.439 5.61298 237.985 5.61298 261.532 5.61298C273.737 5.61298 297.632 2.36195 304.178 15.4545"
-                  stroke="#E53E21"
-                  stroke-width="10"
-                  stroke-linecap="round"
-                />
-              </svg>
-            </span>
-          </p>
-
-          <p>للمرحلة الثانوية</p>
-
-          <a href="/pages/login.html" style="width: 180px" class="btn-secondary"
-            >تسجيل الدخول</a
-          >
-          <a
-            href="/pages/register.html"
-            style="width: 180px"
-            class="btn-primary"
-            >الاشتراك</a
-          >
+      <h1 style="text-align: center">تسجيل الدخول</h1>
+      <form action="" class="register-form">
+        <div class="input-container span-two-columns">
+          <input type="email" id="email" placeholder="البريد الإلكتروني" />
+          <label for="email">
+            <svg
+              width="25"
+              height="25"
+              viewBox="0 0 99 83"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M49.1667 0C22.0562 0 0 18.5047 0 41.25C0 63.9953 22.0562 82.5 49.1667 82.5C56.3745 82.5 63.7249 80.9696 71.0065 77.946L66.6553 70.5499C60.7356 73.0043 54.8503 74.25 49.1667 74.25C27.4793 74.25 9.83333 59.4454 9.83333 41.25C9.83333 23.0546 27.4793 8.25 49.1667 8.25C70.8541 8.25 88.5 23.0546 88.5 41.25V45.375C88.5 48.2295 86.9611 53.625 81.125 53.625C74.2613 53.625 73.7795 46.1216 73.75 45.375V24.75H63.9167V24.8531C59.6847 22.1263 54.5026 20.6408 49.1667 20.625C35.6114 20.625 24.5833 29.8774 24.5833 41.25C24.5833 52.6226 35.6114 61.875 49.1667 61.875C56.2958 61.875 62.6777 59.2721 67.1715 55.1884C69.7478 58.8596 74.0942 61.875 81.125 61.875C92.3006 61.875 98.3333 53.3734 98.3333 45.375V41.25C98.3333 18.5047 76.2772 0 49.1667 0ZM49.1667 53.625C41.0345 53.625 34.4167 48.0728 34.4167 41.25C34.4167 34.4272 41.0345 28.875 49.1667 28.875C57.2988 28.875 63.9167 34.4272 63.9167 41.25C63.9167 48.0728 57.2988 53.625 49.1667 53.625Z"
+                fill="#06B6D4"
+              />
+            </svg>
+          </label>
         </div>
 
-        <img src="/assests/hero-img.png" alt="" />
-      </section>
-
-      <section style="margin: 1rem 0">
-        <h1 style="text-align: center; margin-bottom: 1rem">الاشتراكات</h1>
-
-        <div class="courses-cards-container">
-          <div class="card">
-            <img src="/assests/card-bg.png" alt="" />
-            <div style="padding: 0.5rem">
-              <h3 style="text-align: right">الصف الثالث الثانوي</h3>
-              <h3 style="color: var(--primary); text-align: right">
-                كورسات الصف الثالث الثانوي
-              </h3>
-              <p style="color: var(--secondary)" class="english-font">
-                2000 EGP
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="/assests/card-bg.png" alt="" />
-            <div style="padding: 0.5rem">
-              <h3 style="text-align: right">الصف الثاني الثانوي</h3>
-              <h3 style="color: var(--primary); text-align: right">
-                كورسات الصف الثاني الثانوي
-              </h3>
-              <p style="color: var(--secondary)" class="english-font">
-                2000 EGP
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="/assests/card-bg.png" alt="" />
-            <div style="padding: 0.5rem">
-              <h3 style="text-align: right">الصف الأول الثانوي</h3>
-              <h3 style="color: var(--primary); text-align: right">
-                كورسات الصف الأول الثانوي
-              </h3>
-              <p style="color: var(--secondary)" class="english-font">
-                2000 EGP
-              </p>
-            </div>
-          </div>
+        <div class="input-container span-two-columns">
+          <input type="password" id="password" placeholder="كلمة السر" />
+          <label for="password">
+            <svg
+              width="25"
+              height="25"
+              viewBox="0 0 77 86"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M63.75 28.6666H72.1667C73.2828 28.6666 74.3532 29.0968 75.1424 29.8626C75.9316 30.6283 76.375 31.667 76.375 32.7499V81.7499C76.375 82.8329 75.9316 83.8715 75.1424 84.6373C74.3532 85.4031 73.2828 85.8333 72.1667 85.8333H4.83333C3.71721 85.8333 2.64681 85.4031 1.85759 84.6373C1.06838 83.8715 0.625 82.8329 0.625 81.7499V32.7499C0.625 31.667 1.06838 30.6283 1.85759 29.8626C2.64681 29.0968 3.71721 28.6666 4.83333 28.6666H13.25V24.5833C13.25 18.0854 15.9103 11.8538 20.6456 7.25914C25.3808 2.66449 31.8033 0.083252 38.5 0.083252C45.1967 0.083252 51.6192 2.66449 56.3545 7.25914C61.0897 11.8538 63.75 18.0854 63.75 24.5833V28.6666ZM55.3333 28.6666V24.5833C55.3333 20.2514 53.5598 16.0969 50.403 13.0338C47.2461 9.97075 42.9645 8.24992 38.5 8.24992C34.0355 8.24992 29.7539 9.97075 26.597 13.0338C23.4402 16.0969 21.6667 20.2514 21.6667 24.5833V28.6666H55.3333ZM34.2917 53.1666V61.3333H42.7083V53.1666H34.2917ZM17.4583 53.1666V61.3333H25.875V53.1666H17.4583ZM51.125 53.1666V61.3333H59.5417V53.1666H51.125Z"
+                fill="#06B6D4"
+              />
+            </svg>
+          </label>
         </div>
-      </section>
 
-      <section style="padding: 1rem 2rem">
-        <h1 style="text-align: center">متميزين في</h1>
-        <p style="text-align: right">
-          متابعة مستمرة مع ولي الأمر
-          <svg
-            width="10"
-            height="10"
-            viewBox="0 0 31 30"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M10.7535 4.33256C12.2672 -0.238256 18.7328 -0.238254 20.2465 4.33257L20.3143 4.53745C20.9921 6.58389 22.9366 7.96556 25.0923 7.96556C29.9115 7.96556 32.0255 14.1512 28.1013 16.9485C26.3329 18.2091 25.5938 20.4794 26.2766 22.541C27.7914 27.1154 22.5834 30.9804 18.6596 28.1834L18.4023 28C16.6655 26.7619 14.3345 26.7619 12.5977 28L12.3404 28.1834C8.4166 30.9804 3.20856 27.1154 4.72344 22.541C5.40621 20.4794 4.66714 18.2091 2.89867 16.9485C-1.02552 14.1512 1.08852 7.96556 5.90766 7.96556C8.0634 7.96556 10.0079 6.58389 10.6857 4.53744L10.7535 4.33256Z"
-              fill="#E53D21"
-            />
-          </svg>
-        </p>
-
-        <p style="text-align: right">
-          وفر وقتك ومجهودك يمكنك الوصول في اي وقت
-          <svg
-            width="10"
-            height="10"
-            viewBox="0 0 31 30"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M10.7535 4.33256C12.2672 -0.238256 18.7328 -0.238254 20.2465 4.33257L20.3143 4.53745C20.9921 6.58389 22.9366 7.96556 25.0923 7.96556C29.9115 7.96556 32.0255 14.1512 28.1013 16.9485C26.3329 18.2091 25.5938 20.4794 26.2766 22.541C27.7914 27.1154 22.5834 30.9804 18.6596 28.1834L18.4023 28C16.6655 26.7619 14.3345 26.7619 12.5977 28L12.3404 28.1834C8.4166 30.9804 3.20856 27.1154 4.72344 22.541C5.40621 20.4794 4.66714 18.2091 2.89867 16.9485C-1.02552 14.1512 1.08852 7.96556 5.90766 7.96556C8.0634 7.96556 10.0079 6.58389 10.6857 4.53744L10.7535 4.33256Z"
-              fill="#E53D21"
-            />
-          </svg>
-        </p>
-
-        <p style="text-align: right">
-          احصل على افضل خدمة
-          <svg
-            width="10"
-            height="10"
-            viewBox="0 0 31 30"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M10.7535 4.33256C12.2672 -0.238256 18.7328 -0.238254 20.2465 4.33257L20.3143 4.53745C20.9921 6.58389 22.9366 7.96556 25.0923 7.96556C29.9115 7.96556 32.0255 14.1512 28.1013 16.9485C26.3329 18.2091 25.5938 20.4794 26.2766 22.541C27.7914 27.1154 22.5834 30.9804 18.6596 28.1834L18.4023 28C16.6655 26.7619 14.3345 26.7619 12.5977 28L12.3404 28.1834C8.4166 30.9804 3.20856 27.1154 4.72344 22.541C5.40621 20.4794 4.66714 18.2091 2.89867 16.9485C-1.02552 14.1512 1.08852 7.96556 5.90766 7.96556C8.0634 7.96556 10.0079 6.58389 10.6857 4.53744L10.7535 4.33256Z"
-              fill="#E53D21"
-            />
-          </svg>
-        </p>
-      </section>
+        <button
+          type="submit"
+          class="span-two-columns btn-secondary"
+          style="background-color: var(--secondary); color: white"
+        >
+          تسجيل الدخول
+        </button>
+      </form>
     </main>
 
     <footer>
