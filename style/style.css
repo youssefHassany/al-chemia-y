@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&family=Playball&display=swap");
+
+* {
+  font-family: "Noto Sans Arabic", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary: #147183;
+  --secondary: #e53d21;
+  --dark: #2f2f2f;
+}
+
+.english-font {
+  font-family: "Playball", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.5rem 2rem;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+}
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+}
+.btn-secondary:hover {
+  opacity: 0.9;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 1rem 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  z-index: 50;
+}
+
+header img {
+  width: 164px;
+}
+
+main {
+  padding: 0 2rem 2rem;
+  margin-top: 10rem;
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  width: 100%;
+  padding: 2rem 1rem;
+  background-color: var(--dark);
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+footer a {
+  color: white;
+}
+
+/* Extra small devices (phones, portrait mode) */
+@media (max-width: 575px) {
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+/* Small devices (phones, landscape mode) */
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Extra large devices (large desktops) */
+@media (min-width: 1200px) {
+}
