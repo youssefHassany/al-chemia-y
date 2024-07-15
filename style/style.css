@@ -32,6 +32,8 @@ html {
   cursor: pointer;
   text-align: center;
   font-size: 16px;
+  outline: none;
+  border: none;
 }
 
 .btn-primary {
@@ -109,6 +111,7 @@ footer a {
   footer {
     display: flex;
     flex-direction: column-reverse;
+    gap: 1rem;
   }
 }
 

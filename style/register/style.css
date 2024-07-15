@@ -1,0 +1,57 @@
+.register-form {
+  width: 60%;
+  margin: 2rem auto;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+input {
+  direction: rtl;
+  text-align: right;
+  outline: none;
+  border: none;
+  width: 90%;
+}
+
+select {
+  width: 100%;
+  border: none;
+  outline: none;
+  direction: rtl;
+  cursor: pointer;
+}
+
+.span-two-columns {
+  grid-column: span 2;
+}
+
+.input-container {
+  padding: 0.5rem;
+  font-size: 16px;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Extra small devices (phones, portrait mode) */
+@media (max-width: 575px) {
+}
+
+/* Small devices (phones, landscape mode) */
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Large devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Extra large devices (large desktops) */
+@media (min-width: 1200px) {
+}
