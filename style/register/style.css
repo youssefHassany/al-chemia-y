@@ -36,12 +36,11 @@ select {
   justify-content: space-between;
 }
 
-/* Extra small devices (phones, portrait mode) */
-@media (max-width: 575px) {
-}
-
 /* Small devices (phones, landscape mode) */
-@media (min-width: 576px) and (max-width: 767px) {
+@media (max-width: 767px) {
+  .register-form {
+    width: 100%;
+  }
 }
 
 /* Medium devices (tablets) */
