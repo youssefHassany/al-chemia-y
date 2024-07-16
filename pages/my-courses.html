@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>الكيميائي | الاشتراك</title>
+    <title>الكيميائي | الكورسات</title>
     <link rel="stylesheet" href="/style/style.css" />
-    <link rel="stylesheet" href="/style/register/style.css" />
+    <link rel="stylesheet" href="/style/my-courses/style.css" />
     <link rel="icon" href="/assests/logo.png" />
   </head>
   <body>
@@ -14,212 +14,153 @@
         <img src="/assests/logo.png" alt="" />
       </a>
 
-      <a href="" class="btn-primary"> خطط الاشتراك </a>
+      <div class="user-section" id="user-section">
+        <svg
+          width="60"
+          height="60"
+          viewBox="0 0 90 90"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <rect width="90" height="90" fill="url(#pattern0_45_418)" />
+          <defs>
+            <pattern
+              id="pattern0_45_418"
+              patternContentUnits="objectBoundingBox"
+              width="1"
+              height="1"
+            >
+              <use xlink:href="#image0_45_418" transform="scale(0.0111111)" />
+            </pattern>
+            <image
+              id="image0_45_418"
+              width="90"
+              height="90"
+              xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFXUlEQVR4nO2dbYiVRRTHf+nqrtqLGkFiQbWF9PalshdWKcwKosDeazOzNoMwsBLra0TSJgSxoGIgQcFSEGpGVCoVtYXZi61F9MXFD6nZuruZaSttToychbrs3vs8z50zz8w6Pziw3Hufy/+cvfeZM2fOzIVEIpFIJBKJRCKRSGRmPDAbaANWAZuAXcBuoB84JtYvj+2S17ws11wl75EYgXOAp4D3gEOAqdN+BzYDy4CZnORMAh4CtgL/OAjuaDYEbAEWAk2cRJwqn7S9isEdzX4DngfOYAwzAVgB9JUQ4EqzGpaLpjHFXOCHAAJcaT8D8xkD2HviauB4AEEdzay2DqCRSDkP2B5AIE1G+xa4kMiY7yhNM57NpoXziIQ7gL8CCJopaHYydB+B87hyTmw8mfVhCYGyQCYHZQfJOAz2vQSGva8NBhAco3AbuZlAuCjSgc/kGCCbyw5yo6RFZozbN2Xn2as9ONkNvCCzywuAKcBk4FLgOWCfp2DbSU0pXK884+sB7sygYzrwhYdAW1/n4BlbjPlR0antwNQceqZLLUU767GLDA14ZIWiMz8BpxfUZf85K5W/aU/jidMUS51DwHUONC5VDHSv1NTVeVbRiXcc6vxEUaetZasvP/2q6MAtDrXepqhzn/ay2CJF8UccDzQTgcOKeltRZKui8C4FvZ8p6v0QxZYAzcrcegXN6xX12oF7hoLmE30XRtFeUdC8SlnzkwqaTzS3aIp+UUHzSmXNG10LbpAqlqboda5FA68pa+533X42W1mwAb7EPV0edF/pUnCbpyL7NIeap3pajHgkpkHFiN3oeCXeh+Z2h5p514Pgz4nz1uF0QOz2IHgd8Q2G1na6FLzHg+BtuOdjD7rtAoUzDnoQfDhnsT/LYsCfHnTbsqkzjnkQbIBOR8G22ctbnjTbzCa6QBvgdQd63/CodzC2W4cR219nudRee8Cj3t7YBkPzH6un7+0Jz1p7YkvvTMUKhh3M8nKmfCN8anWa3m3yLN5ItTBPwca+9v0SdG6IcQpuKmxNDo1rS9LYHltRyYxgdiU7hFXvarY4tjKpiTTQV7gMtL3/DaRAUxnkAY1955tL+LR05tDXGftAOMwyz04cAS7Loe9yucanRtt65pyZHveo9BRskZ0r1/rQ+DdwNkpsURR+VL6Kd0uXUVHstXfJex1V1PsBiix0LPag5Mq3Sl+faybLe69VqNeotoRNcjTF7ZLtcvV8cvMyUTabulje2uvj7I96mtD7gPspn9Y6e7yfCbkRfQ8wi3CYVbAq2SsblrywPKe4Q8DFhMclwB85fbFprtfNQnkOOmkjXB7L4cf3vjcLDeesWTblfAeMI1zGSU25lh/W15ayRHZkEPgw4bM4gx+vlimwUbbvVhN4NeFzTQ0fdnhORUekuUZLbx9wLeHSIu231Sp05xMIN9Q4dWZQBp0QD3Kp1kphn7uJwLgnwx6XNwsuurrmLODtGlqHpGYSJEsyBHu/FI7K4BTgATnRsVaQQ/wG/o8FGQ+v+gq43aMu2y/9dQZdgyEe8VPt6J+se14+ldpDk1L1bpFs28iiZUDGm6hozpD6mQon18g5IBPqTDnnSW90niOIdoSUXRRxuqPAsQ62hfcj4CW5p7bIhtJpMgVukL/Pleda5aDubQVadY/LZKT0PNkFc0poK8ti3WVOq7VokENFegMIcK9U4bwXiHwyRZz8pYQAH5CDuouecBMlTcCDckqA5ur6kCykamU2UTFDNrBvrFF3yGr98l5LNVsCYme89LM9Kp2aG6RevFsKVMM/D9Inj+2U17TLLlZ7bfp5kEQikUgkEolEIpEgI/8CxcCKkWw2eU4AAAAASUVORK5CYII="
+            />
+          </defs>
+        </svg>
+
+        <div class="user-text-container" style="text-align: right">
+          <h3 style="font-weight: 600">نرمين أحمد</h3>
+          <p>201010727610</p>
+        </div>
+
+        <!-- floating user data -->
+        <div id="user-floating-section">
+          <!-- user data -->
+          <div class="user-section">
+            <svg
+              width="60"
+              height="60"
+              viewBox="0 0 90 90"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <rect width="90" height="90" fill="url(#pattern0_45_418)" />
+              <defs>
+                <pattern
+                  id="pattern0_45_418"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    xlink:href="#image0_45_418"
+                    transform="scale(0.0111111)"
+                  />
+                </pattern>
+                <image
+                  id="image0_45_418"
+                  width="90"
+                  height="90"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFXUlEQVR4nO2dbYiVRRTHf+nqrtqLGkFiQbWF9PalshdWKcwKosDeazOzNoMwsBLra0TSJgSxoGIgQcFSEGpGVCoVtYXZi61F9MXFD6nZuruZaSttToychbrs3vs8z50zz8w6Pziw3Hufy/+cvfeZM2fOzIVEIpFIJBKJRCKRSGRmPDAbaANWAZuAXcBuoB84JtYvj+2S17ws11wl75EYgXOAp4D3gEOAqdN+BzYDy4CZnORMAh4CtgL/OAjuaDYEbAEWAk2cRJwqn7S9isEdzX4DngfOYAwzAVgB9JUQ4EqzGpaLpjHFXOCHAAJcaT8D8xkD2HviauB4AEEdzay2DqCRSDkP2B5AIE1G+xa4kMiY7yhNM57NpoXziIQ7gL8CCJopaHYydB+B87hyTmw8mfVhCYGyQCYHZQfJOAz2vQSGva8NBhAco3AbuZlAuCjSgc/kGCCbyw5yo6RFZozbN2Xn2as9ONkNvCCzywuAKcBk4FLgOWCfp2DbSU0pXK884+sB7sygYzrwhYdAW1/n4BlbjPlR0antwNQceqZLLUU767GLDA14ZIWiMz8BpxfUZf85K5W/aU/jidMUS51DwHUONC5VDHSv1NTVeVbRiXcc6vxEUaetZasvP/2q6MAtDrXepqhzn/ay2CJF8UccDzQTgcOKeltRZKui8C4FvZ8p6v0QxZYAzcrcegXN6xX12oF7hoLmE30XRtFeUdC8SlnzkwqaTzS3aIp+UUHzSmXNG10LbpAqlqboda5FA68pa+533X42W1mwAb7EPV0edF/pUnCbpyL7NIeap3pajHgkpkHFiN3oeCXeh+Z2h5p514Pgz4nz1uF0QOz2IHgd8Q2G1na6FLzHg+BtuOdjD7rtAoUzDnoQfDhnsT/LYsCfHnTbsqkzjnkQbIBOR8G22ctbnjTbzCa6QBvgdQd63/CodzC2W4cR219nudRee8Cj3t7YBkPzH6un7+0Jz1p7YkvvTMUKhh3M8nKmfCN8anWa3m3yLN5ItTBPwca+9v0SdG6IcQpuKmxNDo1rS9LYHltRyYxgdiU7hFXvarY4tjKpiTTQV7gMtL3/DaRAUxnkAY1955tL+LR05tDXGftAOMwyz04cAS7Loe9yucanRtt65pyZHveo9BRskZ0r1/rQ+DdwNkpsURR+VL6Kd0uXUVHstXfJex1V1PsBiix0LPag5Mq3Sl+faybLe69VqNeotoRNcjTF7ZLtcvV8cvMyUTabulje2uvj7I96mtD7gPspn9Y6e7yfCbkRfQ8wi3CYVbAq2SsblrywPKe4Q8DFhMclwB85fbFprtfNQnkOOmkjXB7L4cf3vjcLDeesWTblfAeMI1zGSU25lh/W15ayRHZkEPgw4bM4gx+vlimwUbbvVhN4NeFzTQ0fdnhORUekuUZLbx9wLeHSIu231Sp05xMIN9Q4dWZQBp0QD3Kp1kphn7uJwLgnwx6XNwsuurrmLODtGlqHpGYSJEsyBHu/FI7K4BTgATnRsVaQQ/wG/o8FGQ+v+gq43aMu2y/9dQZdgyEe8VPt6J+se14+ldpDk1L1bpFs28iiZUDGm6hozpD6mQon18g5IBPqTDnnSW90niOIdoSUXRRxuqPAsQ62hfcj4CW5p7bIhtJpMgVukL/Pleda5aDubQVadY/LZKT0PNkFc0poK8ti3WVOq7VokENFegMIcK9U4bwXiHwyRZz8pYQAH5CDuouecBMlTcCDckqA5ur6kCykamU2UTFDNrBvrFF3yGr98l5LNVsCYme89LM9Kp2aG6RevFsKVMM/D9Inj+2U17TLLlZ7bfp5kEQikUgkEolEIpEgI/8CxcCKkWw2eU4AAAAASUVORK5CYII="
+                />
+              </defs>
+            </svg>
+
+            <div class="user-text-container" style="text-align: right">
+              <h3 style="font-weight: 600">نرمين أحمد</h3>
+              <p>201010727610</p>
+            </div>
+          </div>
+
+          <!-- pages list -->
+          <ul class="user-floating-links-list" dir="rtl">
+            <li>
+              <a href="/pages/my-courses.html">كل الكورسات</a>
+            </li>
+
+            <li>
+              <a href="/pages/quizzes.html">الاختبارات</a>
+            </li>
+
+            <li>
+              <a href="/pages/results.html">النتائج</a>
+            </li>
+
+            <li>
+              <a href="/pages/last-watched.html">المشاهدات</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main>
-      <h1 style="text-align: center; font-size: 20px">
-        لتنشيط حسابك يرجي تحويل مبلغ الاشتراك الي الرقم
-        <span class="english-font" style="color: var(--secondary)"
-          >01065115575</span
-        >
-      </h1>
-      <form action="" class="register-form">
-        <div class="input-container">
-          <label for="first-name">
-            <svg
-              width="25"
-              height="25"
-              viewBox="0 0 78 83"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M41.8333 30.75C49.7264 30.75 56.125 24.0902 56.125 15.875C56.125 7.65976 49.7264 1 41.8333 1C33.9403 1 27.5417 7.65976 27.5417 15.875C27.5417 24.0902 33.9403 30.75 41.8333 30.75Z"
-                fill="#06B6D4"
-                stroke="#06B6D4"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M1 79.625C1 60.8464 17.4538 45.625 37.75 45.625"
-                stroke="#06B6D4"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M56.125 81.75L76.5417 60.5L68.375 52L47.9583 73.25V81.75H56.125Z"
-                fill="#06B6D4"
-                stroke="#06B6D4"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </label>
-          <input id="first-name" type="text" placeholder="الاسم الأول" />
+      <section class="my-subscriptions">
+        <h1 style="font-weight: 700; font-size: 2rem">اشتراكاتي</h1>
+
+        <ul dir="rtl">
+          <li>
+            <a href="/pages/my-courses.html" class="active">كل الكورسات</a>
+          </li>
+
+          <li>
+            <a href="/pages/quizzes.html">الاختبارات</a>
+          </li>
+
+          <li>
+            <a href="/pages/results.html">النتائج</a>
+          </li>
+
+          <li>
+            <a href="/pages/last-watched.html">المشاهدات</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="courses-cards-container" style="gap: 6rem">
+        <div class="card" style="border-radius: 0px">
+          <img src="/assests/course-card-bg.png" alt="" />
+          <div style="padding: 1rem">
+            <h3 style="text-align: right">الصف الثالث الثانوي</h3>
+            <h5 style="color: #2d2f31; text-align: center">الكيمياء</h5>
+            <div class="progress-container">
+              <div class="progress-bar"></div>
+              <p style="text-align: left">10% Complete</p>
+            </div>
+          </div>
         </div>
 
-        <div class="input-container">
-          <label for="last-name">
-            <svg
-              width="25"
-              height="25"
-              viewBox="0 0 78 83"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M41.8333 30.75C49.7264 30.75 56.125 24.0902 56.125 15.875C56.125 7.65976 49.7264 1 41.8333 1C33.9403 1 27.5417 7.65976 27.5417 15.875C27.5417 24.0902 33.9403 30.75 41.8333 30.75Z"
-                fill="#06B6D4"
-                stroke="#06B6D4"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M1 79.625C1 60.8464 17.4538 45.625 37.75 45.625"
-                stroke="#06B6D4"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M56.125 81.75L76.5417 60.5L68.375 52L47.9583 73.25V81.75H56.125Z"
-                fill="#06B6D4"
-                stroke="#06B6D4"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </label>
-          <input id="last-name" type="text" placeholder="الاسم الثاني" />
+        <div class="card" style="border-radius: 0px">
+          <img src="/assests/course-card-bg.png" alt="" />
+          <div style="padding: 1rem">
+            <h3 style="text-align: right">الصف الثالث الثانوي</h3>
+            <h5 style="color: #2d2f31; text-align: center">الكيمياء</h5>
+          </div>
         </div>
 
-        <div class="input-container">
-          <label for="student-phone">
-            <svg
-              width="25"
-              height="25"
-              viewBox="0 0 87 51"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M82.9444 7.96137L71.7 1.4553C70.9068 0.993909 69.9641 0.627823 68.9258 0.378076C67.8876 0.128329 66.7744 -0.000156045 65.6502 1.42226e-07C63.3591 1.42226e-07 61.2053 0.519752 59.5899 1.4553L47.4903 8.46278C46.6936 8.92215 46.0615 9.46816 45.6303 10.0694C45.1991 10.6707 44.9772 11.3154 44.9775 11.9665C44.9775 13.2934 45.8749 14.5408 47.4903 15.4764L56.338 20.6005C54.267 23.2443 51.3876 25.6494 47.8387 27.6997C44.2989 29.76 40.1464 31.4337 35.5808 32.6404L26.7331 27.5162C25.9399 27.0549 24.9971 26.6888 23.9589 26.439C22.9207 26.1893 21.8075 26.0608 20.6833 26.0609C18.3922 26.0609 16.2384 26.5807 14.623 27.5162L2.51283 34.5176C1.71522 34.9778 1.0826 35.5249 0.651357 36.1272C0.22011 36.7296 -0.00125094 37.3754 5.31721e-06 38.0275C5.31721e-06 39.3544 0.897443 40.6018 2.51283 41.5373L13.7361 48.0373C16.3123 49.5354 19.8703 50.3853 23.5234 50.3853C24.2942 50.3853 25.0332 50.3486 25.7618 50.2752C39.9941 48.9178 54.1102 44.5335 65.5024 37.9418C76.884 31.3563 84.4436 23.187 86.8192 14.9199C87.5372 12.3945 86.0907 9.79578 82.9444 7.96137Z"
-                fill="#06B6D4"
-              />
-            </svg>
-          </label>
-          <input id="student-phone" type="number" placeholder="رقم الهاتف" />
+        <div class="card" style="border-radius: 0px">
+          <img src="/assests/course-card-bg.png" alt="" />
+          <div style="padding: 1rem">
+            <h3 style="text-align: right">الصف الثالث الثانوي</h3>
+            <h5 style="color: #2d2f31; text-align: center">الكيمياء</h5>
+          </div>
         </div>
-
-        <div class="input-container">
-          <label for="parent-phone">
-            <svg
-              width="25"
-              height="25"
-              viewBox="0 0 87 51"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M82.9444 7.96137L71.7 1.4553C70.9068 0.993909 69.9641 0.627823 68.9258 0.378076C67.8876 0.128329 66.7744 -0.000156045 65.6502 1.42226e-07C63.3591 1.42226e-07 61.2053 0.519752 59.5899 1.4553L47.4903 8.46278C46.6936 8.92215 46.0615 9.46816 45.6303 10.0694C45.1991 10.6707 44.9772 11.3154 44.9775 11.9665C44.9775 13.2934 45.8749 14.5408 47.4903 15.4764L56.338 20.6005C54.267 23.2443 51.3876 25.6494 47.8387 27.6997C44.2989 29.76 40.1464 31.4337 35.5808 32.6404L26.7331 27.5162C25.9399 27.0549 24.9971 26.6888 23.9589 26.439C22.9207 26.1893 21.8075 26.0608 20.6833 26.0609C18.3922 26.0609 16.2384 26.5807 14.623 27.5162L2.51283 34.5176C1.71522 34.9778 1.0826 35.5249 0.651357 36.1272C0.22011 36.7296 -0.00125094 37.3754 5.31721e-06 38.0275C5.31721e-06 39.3544 0.897443 40.6018 2.51283 41.5373L13.7361 48.0373C16.3123 49.5354 19.8703 50.3853 23.5234 50.3853C24.2942 50.3853 25.0332 50.3486 25.7618 50.2752C39.9941 48.9178 54.1102 44.5335 65.5024 37.9418C76.884 31.3563 84.4436 23.187 86.8192 14.9199C87.5372 12.3945 86.0907 9.79578 82.9444 7.96137Z"
-                fill="#06B6D4"
-              />
-            </svg>
-          </label>
-          <input
-            id="parent-phone"
-            type="number"
-            placeholder="رقم هاتف ولي الأمر"
-          />
-        </div>
-
-        <div class="input-container span-two-columns">
-          <select name="" id="governorates-dropdown">
-            <option value="" disabled selected>المحافظة</option>
-          </select>
-        </div>
-
-        <div class="input-container span-two-columns">
-          <select name="" id="grade">
-            <option value="" disabled selected>الفصل الدراسي</option>
-            <option value="">الصف الأول الثانوي</option>
-            <option value="">الصف الثاني الثانوي</option>
-            <option value="">الصف الثالث الثانوي</option>
-          </select>
-        </div>
-
-        <div class="input-container span-two-columns">
-          <label for="email">
-            <svg
-              width="25"
-              height="25"
-              viewBox="0 0 99 83"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M49.1667 0C22.0562 0 0 18.5047 0 41.25C0 63.9953 22.0562 82.5 49.1667 82.5C56.3745 82.5 63.7249 80.9696 71.0065 77.946L66.6553 70.5499C60.7356 73.0043 54.8503 74.25 49.1667 74.25C27.4793 74.25 9.83333 59.4454 9.83333 41.25C9.83333 23.0546 27.4793 8.25 49.1667 8.25C70.8541 8.25 88.5 23.0546 88.5 41.25V45.375C88.5 48.2295 86.9611 53.625 81.125 53.625C74.2613 53.625 73.7795 46.1216 73.75 45.375V24.75H63.9167V24.8531C59.6847 22.1263 54.5026 20.6408 49.1667 20.625C35.6114 20.625 24.5833 29.8774 24.5833 41.25C24.5833 52.6226 35.6114 61.875 49.1667 61.875C56.2958 61.875 62.6777 59.2721 67.1715 55.1884C69.7478 58.8596 74.0942 61.875 81.125 61.875C92.3006 61.875 98.3333 53.3734 98.3333 45.375V41.25C98.3333 18.5047 76.2772 0 49.1667 0ZM49.1667 53.625C41.0345 53.625 34.4167 48.0728 34.4167 41.25C34.4167 34.4272 41.0345 28.875 49.1667 28.875C57.2988 28.875 63.9167 34.4272 63.9167 41.25C63.9167 48.0728 57.2988 53.625 49.1667 53.625Z"
-                fill="#06B6D4"
-              />
-            </svg>
-          </label>
-          <input type="email" id="email" placeholder="البريد الإلكتروني" />
-        </div>
-
-        <div class="input-container">
-          <label for="password">
-            <svg
-              width="25"
-              height="25"
-              viewBox="0 0 77 86"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M63.75 28.6666H72.1667C73.2828 28.6666 74.3532 29.0968 75.1424 29.8626C75.9316 30.6283 76.375 31.667 76.375 32.7499V81.7499C76.375 82.8329 75.9316 83.8715 75.1424 84.6373C74.3532 85.4031 73.2828 85.8333 72.1667 85.8333H4.83333C3.71721 85.8333 2.64681 85.4031 1.85759 84.6373C1.06838 83.8715 0.625 82.8329 0.625 81.7499V32.7499C0.625 31.667 1.06838 30.6283 1.85759 29.8626C2.64681 29.0968 3.71721 28.6666 4.83333 28.6666H13.25V24.5833C13.25 18.0854 15.9103 11.8538 20.6456 7.25914C25.3808 2.66449 31.8033 0.083252 38.5 0.083252C45.1967 0.083252 51.6192 2.66449 56.3545 7.25914C61.0897 11.8538 63.75 18.0854 63.75 24.5833V28.6666ZM55.3333 28.6666V24.5833C55.3333 20.2514 53.5598 16.0969 50.403 13.0338C47.2461 9.97075 42.9645 8.24992 38.5 8.24992C34.0355 8.24992 29.7539 9.97075 26.597 13.0338C23.4402 16.0969 21.6667 20.2514 21.6667 24.5833V28.6666H55.3333ZM34.2917 53.1666V61.3333H42.7083V53.1666H34.2917ZM17.4583 53.1666V61.3333H25.875V53.1666H17.4583ZM51.125 53.1666V61.3333H59.5417V53.1666H51.125Z"
-                fill="#06B6D4"
-              />
-            </svg>
-          </label>
-          <input type="password" id="password" placeholder="كلمة السر" />
-        </div>
-
-        <div class="input-container">
-          <label for="confirm-password">
-            <svg
-              width="25"
-              height="25"
-              viewBox="0 0 77 86"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M63.75 28.6666H72.1667C73.2828 28.6666 74.3532 29.0968 75.1424 29.8626C75.9316 30.6283 76.375 31.667 76.375 32.7499V81.7499C76.375 82.8329 75.9316 83.8715 75.1424 84.6373C74.3532 85.4031 73.2828 85.8333 72.1667 85.8333H4.83333C3.71721 85.8333 2.64681 85.4031 1.85759 84.6373C1.06838 83.8715 0.625 82.8329 0.625 81.7499V32.7499C0.625 31.667 1.06838 30.6283 1.85759 29.8626C2.64681 29.0968 3.71721 28.6666 4.83333 28.6666H13.25V24.5833C13.25 18.0854 15.9103 11.8538 20.6456 7.25914C25.3808 2.66449 31.8033 0.083252 38.5 0.083252C45.1967 0.083252 51.6192 2.66449 56.3545 7.25914C61.0897 11.8538 63.75 18.0854 63.75 24.5833V28.6666ZM55.3333 28.6666V24.5833C55.3333 20.2514 53.5598 16.0969 50.403 13.0338C47.2461 9.97075 42.9645 8.24992 38.5 8.24992C34.0355 8.24992 29.7539 9.97075 26.597 13.0338C23.4402 16.0969 21.6667 20.2514 21.6667 24.5833V28.6666H55.3333ZM34.2917 53.1666V61.3333H42.7083V53.1666H34.2917ZM17.4583 53.1666V61.3333H25.875V53.1666H17.4583ZM51.125 53.1666V61.3333H59.5417V53.1666H51.125Z"
-                fill="#06B6D4"
-              />
-            </svg>
-          </label>
-          <input
-            type="password"
-            id="confirm-password"
-            placeholder="تأكيد كلمة السر"
-          />
-        </div>
-
-        <button
-          type="submit"
-          class="span-two-columns btn-secondary"
-          style="background-color: var(--secondary); color: white"
-        >
-          إنشاء حساب
-        </button>
-      </form>
+      </section>
     </main>
 
     <footer>
@@ -454,6 +395,6 @@
       </a>
     </footer>
 
-    <script src="/scripts/renderGovernorates.js"></script>
+    <script src="/scripts/toggleUserFloatingList.js"></script>
   </body>
 </html>

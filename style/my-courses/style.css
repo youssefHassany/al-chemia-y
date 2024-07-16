@@ -1,0 +1,20 @@
+.progress-container {
+  margin-top: 1rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 2px;
+  background-color: #d1d7dc;
+  position: relative;
+}
+
+.progress-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #5022c3;
+  height: 100%;
+  width: 10%;
+}
