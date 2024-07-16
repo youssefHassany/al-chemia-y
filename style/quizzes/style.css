@@ -32,6 +32,9 @@
 
 /* Extra small devices (phones, portrait mode) */
 @media (max-width: 575px) {
+  .quizzes-list-container ul {
+    font-size: 14px;
+  }
 }
 
 /* Small devices (phones, landscape mode) */

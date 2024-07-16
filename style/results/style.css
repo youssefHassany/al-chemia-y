@@ -32,6 +32,9 @@
 
 /* Extra small devices (phones, portrait mode) */
 @media (max-width: 575px) {
+  .results-list-container ul {
+    font-size: 14px;
+  }
 }
 
 /* Small devices (phones, landscape mode) */

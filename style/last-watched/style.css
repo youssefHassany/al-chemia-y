@@ -1,0 +1,75 @@
+.last-watched-cards-container {
+  padding: 0 2rem 2rem;
+  display: grid;
+  direction: rtl;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.last-watched-card {
+  padding: 2rem;
+  /* background-color: blue; */
+  border-radius: 1.5rem;
+  box-shadow: 0 3px 20px -8px rgb(0 0 0);
+}
+
+.last-watched-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 1rem;
+}
+
+.last-watched-card-header {
+  border-bottom: 1px solid #b3b3b3;
+}
+
+.last-watched-card-title {
+  display: flex;
+  gap: 1rem;
+}
+
+.chips-container {
+  display: flex;
+  gap: 4px;
+  margin: 12px 0;
+}
+
+.chip {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+  border-radius: 1rem;
+  background-color: #e0e0e0;
+  padding: 1px 12px;
+}
+
+.last-watched-card-content ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 12px 0;
+}
+
+.last-watched-card-content ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px;
+}
+
+.last-watched-card-content ul li img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.last-watched-card-content ul li input {
+  cursor: pointer;
+}
+
+.last-watched-card-content ul li:hover {
+  background-color: #e0e0e0;
+}
