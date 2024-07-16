@@ -23,7 +23,7 @@ iframe {
   overflow-y: scroll;
 }
 .videos-list-title,
-.video-item {
+.video-dropdown {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #ccc;
@@ -42,9 +42,29 @@ svg {
   cursor: pointer;
 }
 
-.video-item {
+.video-dropdown {
   padding: 0.5rem;
   line-height: 28px;
+  flex-direction: column;
+}
+
+.videos-dropdown-list {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.video-item {
+  padding: 0.5rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.video-item div {
+  display: flex;
+  gap: 8px;
 }
 
 /* Extra small devices (phones, portrait mode) */
